@@ -659,7 +659,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 102883490}
         m_TargetAssemblyTypeName: ButtonSFX, Assembly-CSharp
-        m_MethodName: PlayButtonSFX
+        m_MethodName: PlayButtonSfx
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

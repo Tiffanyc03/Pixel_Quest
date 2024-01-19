@@ -5,7 +5,8 @@ public class SoundEffectDeath : MonoBehaviour {
     // =================================================================================================================
     // VARIABLES 
     // =================================================================================================================
-    private AudioSource _audioSource;
+    
+    private AudioSource _audioSource; // AudioSource the will play
     
     // =================================================================================================================
     // METHODS  
@@ -13,16 +14,13 @@ public class SoundEffectDeath : MonoBehaviour {
 
     public void SetAudio(AudioSource audioSource) {
         _audioSource = GetComponent<AudioSource>();
-        _audioSource.clip = audioSource.clip;
-        _audioSource.volume = audioSource.volume;
-        _audioSource.Play();
-        // Invoke the method to destroy the GameObject after the audio clip length
-        Invoke($"DestroyAfterAudio", _audioSource.clip.length);
+        
+        _audioSource.clip = audioSource.clip;           // Copy the audio clip
+        _audioSource.volume = audioSource.volume;       // Copy the volume 
+        _audioSource.Play();                            // Play the SFX 
+        Invoke($"DestroyAfterAudio", _audioSource.clip.length); // Wait till the the clip lenght pasted and Destroy this object 
     }
-
-    private void DestroyAfterAudio()
-    {
-        // Destroy the GameObject or perform other actions
-        Destroy(gameObject);
-    }
+    
+    // Destroy the GameObject
+    private void DestroyAfterAudio() { Destroy(gameObject); }
 }
