@@ -110,22 +110,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: yellowSheet_1
+      name: yellowSheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 19
-        width: 189
-        height: 50
+        y: 0
+        width: 512
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bb394e621207b64784a95ad19dbc283
-      internalID: 1283981963
+      spriteID: 79ef4446e98f49b4c87077601788c88d
+      internalID: 1542787352
       vertices: []
       indices: 
       edges: []
@@ -142,7 +142,6 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       yellowSheet_0: 1542787352
-      yellowSheet_1: 1283981963
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
