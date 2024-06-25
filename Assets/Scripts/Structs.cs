@@ -36,7 +36,7 @@ public class Structs
     public struct Scenes
     {
         public const string menu = "MenuLevel";
-        public const string firstLevel = "TestLevel";
+        public const string firstLevel = "Level_1";
     }
 
     public struct Mixers

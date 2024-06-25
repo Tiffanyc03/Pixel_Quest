@@ -17,7 +17,7 @@ public class PlayerJump : MonoBehaviour
     public float CapsuleRadius = 0.08f;
 
     // Water Check 
-    private bool _waterCheck;
+    public bool _waterCheck;
     private string _waterTag = "Water";
 
     // Ground Check 
