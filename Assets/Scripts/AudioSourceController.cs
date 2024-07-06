@@ -15,6 +15,9 @@ public class AudioSourceController : MonoBehaviour
 
     private void Start()
     {
+        if (!PlayerPrefs.HasKey(Structs.Mixers.sfxVolume)){ PlayerPrefs.SetFloat(Structs.Mixers.sfxVolume, 1); }
+        if (!PlayerPrefs.HasKey(Structs.Mixers.musicVolume)) { PlayerPrefs.SetFloat(Structs.Mixers.musicVolume, 1); }
+
         UpdateMusicGroup(PlayerPrefs.GetFloat(Structs.Mixers.musicVolume));
         UpdateSFXGroup(PlayerPrefs.GetFloat(Structs.Mixers.sfxVolume));
     }
