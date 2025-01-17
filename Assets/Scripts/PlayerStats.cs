@@ -17,7 +17,8 @@ public class PlayerStats : MonoBehaviour
     public int _playerLife = 3;
     private float _maxHealth = 3.0f; 
     public int _playerCoin = 0;
-
+    public AudioSource coinAudio;
+    public AudioClip coinSFX;
 
 
     // Start is called before the first frame update
@@ -77,7 +78,7 @@ public class PlayerStats : MonoBehaviour
                     // Gain one coin and destory the object 
                     _playerCoin++;
                     _uIController.CoinTextUpdate(_playerCoin);
-                    _audioSourceController.PlaySFX(Structs.SoundEffects.coin);
+                    coinAudio.PlayOneShot(coinSFX);
                     Destroy(collision.gameObject);
                     return;
                 }
