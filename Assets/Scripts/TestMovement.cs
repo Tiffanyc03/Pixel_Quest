@@ -13,17 +13,15 @@ public class TestMovement : MonoBehaviour
     float numThree = 10.25f; 
     [SerializeField] int numFour = 10;
 
-    // if (condition) {
 
-    // } 
-    // else if (condition) {
-    // } 
-    // else { 
+    private Rigidbody2D rb;
 
-    
+
     // Start is called before the first frame update
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
+        
         Debug.Log(transform.position);
 
         if (numOne == 1)
